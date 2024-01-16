@@ -1,0 +1,31 @@
+GET https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos/?status=TO%20DO
+
+GET https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH
+
+###
+GET https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos/3
+
+###
+GET https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/agenda/?date=2020-09-22
+
+###
+POST https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos
+Content-Type: application/json
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+###
+PUT https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos/3
+Content-Type: application/json
+
+{ "dueDate": "2021-02-22" }
+
+###
+DELETE https://neeleshbttfznjscadoqbs.drops.nxtwave.tech/todos/3
